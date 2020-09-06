@@ -651,13 +651,6 @@ void DMA2_Stream0_IRQHandler(void) {
     }
     IRQ_EXIT(DMA2_Stream0_IRQn);
 }
-void DMA2_Stream1_IRQHandler(void) {
-    IRQ_ENTER(DMA2_Stream1_IRQn);
-    if (dma_handle[dma_id_9] != NULL) {
-        HAL_DMA_IRQHandler(dma_handle[dma_id_9]);
-    }
-    IRQ_EXIT(DMA2_Stream1_IRQn);
-}
 void DMA2_Stream2_IRQHandler(void) {
     IRQ_ENTER(DMA2_Stream2_IRQn);
     if (dma_handle[dma_id_10] != NULL) {

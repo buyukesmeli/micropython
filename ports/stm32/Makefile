@@ -396,6 +396,8 @@ SRC_HAL += $(addprefix $(HAL_DIR)/Src/stm32$(MCU_SERIES)xx_,\
 	hal_sdram.c \
 	hal_dma_ex.c \
 	hal_dcmi.c \
+	hal_dma2d.c \
+	hal_ltdc.c \
 	)
 endif
 
